@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    #ifndef ONLINE_JUDGE
+         freopen("input.txt", "r", stdin); 
+         freopen("output.txt", "w", stdout);
+    #endif
+
+         // ------------------start from here;;
+int t;
+cin>>t;
+while(t-->0){
+    int n,k;
+    cin>>n>>k;
+    if(k<n){
+        cout<<k<<endl;
+        continue;
+    }
+    int ans = k + ((k)/(n-1));
+    if(ans%n == 0)  ans--;
+       
+    cout<<ans<<endl;
+}   
+   
+
+   return 0;      
+}
