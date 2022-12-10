@@ -1,0 +1,33 @@
+
+#include<bits/stdc++.h>
+#define ll long long int
+using namespace std;
+ 
+int main()
+{
+    #ifndef ONLINE_JUDGE
+         freopen("input.txt", "r", stdin); 
+         freopen("output.txt", "w", stdout);
+    #endif
+ 
+         // ------------------start from here;;
+  
+ 
+ 
+    int t;
+    cin>>t;
+   while(t--){
+    ll a,b,c;
+    cin>>a>>b>>c;
+    ll sum=a+b+c;
+    ll val = sum/9;
+    if(sum%9 != 0 || a<val || b<val || c<val){
+        cout<<"NO"<<endl;
+    }else{
+        cout<<"YES"<<endl;
+    }
+   }
+ 
+ 
+   return 0;      
+}
